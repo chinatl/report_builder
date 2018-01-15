@@ -8,15 +8,24 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 import './index.css';
-import App from './components/App';
+import './assets/css/font.css';
+import './assets/css/main.css';
+import App from './App';
 
 import commonStore from './stores/commonStore';
+import userStore from './stores/userStore';
+import authStore from './stores/authStore';
+
+
+import { LocaleProvider } from 'antd';
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import 'moment/locale/zh-cn';
 
 const stores = {
-  commonStore,
+	commonStore,
+	userStore,
+	authStore
 };
-
-
 
 promiseFinally.shim();
 useStrict(true);
@@ -24,7 +33,7 @@ useStrict(true);
 ReactDOM.render((
   <Provider {...stores}>
     <HashRouter>
-      <App />
+      <LocaleProvider locale={zh_CN}><App /></LocaleProvider>
     </HashRouter>
   </Provider>
 ), document.getElementById('root'));

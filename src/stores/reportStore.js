@@ -22,7 +22,5 @@ class reportStore {
       }))
       .finally(action(() => { this.isLoading = false; }));
   }
-
 }
-
 export default new ReportStore();

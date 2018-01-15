@@ -1,0 +1,31 @@
+.oneList {
+	overflow: hidden;
+	display: flex;
+	margin: 10px 0;
+	overflow: auto
+}
+.moreline {
+	margin-bottom: 10px
+}
+.params {
+    margin-left: 10px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.title {
+	color:#000;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.default {
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.defaultTitle {
+	display: flex;
+	align-items: center;
+}

@@ -1,0 +1,55 @@
+{
+    "term_info":[
+               {
+                    "name":"p0",
+                    "type":"0",
+                    "title":"姓名",
+                    "default":"张三",
+                    "param_str":"@name",
+                    "optional":""
+                 },
+                {
+                    "name":"p1",
+                    "type":"1",
+                    "title":"机构",
+                    "default":"610000",
+                    "param_str":"@branch",
+                    "optional":""
+                },
+                {
+                    "name":"p2",
+                    "type":"2",
+                    "title":"渠道",
+                    "default":"3",
+                    "param_str":"@channel",
+                    "optional":"1,2,3-全部 1-团险 2-个险 3 银保 4 "
+                },
+                {
+                    "name":"p3",
+                    "type":"3",
+                    "title":"险种",
+                    "default":"0,1,2",
+                    "param_str":"@insurance",
+                    "optional":"0-个险首年期交 1-个险首年期交 2-个险首年期交 "
+                },
+                {
+                    "name":"p4",
+                    "type":"4",
+                    "title":"日期",
+                    "default":"2017",
+                    "param_str":"@start",
+                    "optional":"1" //1 年 2月 3 日
+                }
+    ],
+    "columns":"",
+    "report":[
+        {
+           "d1":"",
+           "d2":"",
+           "d3":""
+        }
+    ],
+    "is_total":"0",
+	"branch_level":"0",
+	"branch_level_default":"0",
+}
